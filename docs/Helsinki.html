@@ -68,7 +68,7 @@
     function success(data) {
       data.map(hotel => {
         if (hotel.city === "Helsinki") {
-          $('.list').append('<li class="list-group-item">' + hotel.name + '</li>')
+          $('.list').append('<li class="list-group-item">' + hotel.name + '<strong>' + hotel.baseprice + '</strong></li>')
         }
       })
     }
